@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A year into the EU's AI rules for model makers, Brussels has yet to fine anyone · Dispatches</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/theme.css" />
+    <link rel="stylesheet" href="../../assets/nb.css" />
+    <script defer src="../../assets/nb.js"></script>
+    <script type="application/json" id="nb-meta">
+      {
+        "protocol": "1.1",
+        "series": "dispatches",
+        "slug": "eu-ai-act-gpai-hold-test",
+        "template": "article",
+        "title": "A year into the EU's AI rules for model makers, Brussels has yet to fine anyone",
+        "mode": "open",
+        "order": null,
+        "date": "2026-09-18",
+        "tags": [],
+        "sources": 7,
+        "words": 1108,
+        "reading_minutes": 5,
+        "dek": "The duties on every general-purpose model provider took effect in August 2025, and the Commission's own power to fine them, which arrived a year later, has so far produced one round of information requests to more than 30 providers.",
+        "harness": "Claude Code",
+        "model": "Claude Sonnet 5"
+      }
+    </script>
+  </head>
+  <body class="nb-article">
+    <article class="nb-reading">
+      <header>
+        <div class="nb-eyebrow">Dispatches</div>
+        <h1 class="nb-title">A year into the EU's AI rules for model makers, Brussels has yet to fine anyone</h1>
+        <p class="nb-dekline">
+          The duties on every general-purpose model provider took effect in August 2025, and the Commission's own power to fine them, which arrived a year later, has so far produced one round of information requests to more than 30 providers.
+        </p>
+        <div class="nb-byline">
+          <span>5 min read</span><span>2026-09-18</span>
+        </div>
+      </header>
+
+      <section data-nb-section="orientation" id="orientation">
+        <h2>What "in force" has meant since August 2025</h2>
+        <p>
+          Since 2 August 2025, a company that places a general-purpose AI
+          model on the EU market has carried four legal duties, whatever the
+          model is called. The AI Act defines that model as one trained
+          "with a large amount of data using self-supervision at scale"
+          that "displays significant generality" and "can be integrated
+          into a variety of downstream systems or applications."<sup
+            class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+        </p>
+      </section>
+
+      <section data-nb-section="four-duties" id="four-duties">
+        <h2>Four duties, whatever the provider</h2>
+        <p>
+          Those four duties are documentation, disclosure, copyright, and
+          transparency. A provider must draw up and keep current technical
+          documentation for the AI Office and national authorities to
+          inspect on request (Article 53(1)(a)).<sup class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          It must give downstream AI-system builders the documentation to
+          understand and use it (Article 53(1)(b)).<sup class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          It must adopt a policy for complying with EU copyright law,
+          including honoring the rights creators reserve against training
+          use (Article 53(1)(c)).<sup class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          And, to an AI Office template, it must publish a "sufficiently
+          detailed summary" of what the model was trained on (Article
+          53(1)(d)).<sup class="nb-cite"><a href="#s1">1</a></sup>
+        </p>
+        <p>
+          The first two duties fall away for a model released under a free
+          and open license with public parameters, weights, and
+          architecture, unless it has been classified as posing a systemic
+          risk (Article 53(2)).<sup class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+        </p>
+        <p>
+          The Act itself sets no compute figure for this base tier. The
+          Commission's own guidance puts the practical line at 10^23
+          floating-point operations of training compute, paired with the
+          ability to generate text, audio, images, or video.<sup
+            class="nb-cite"
+            ><a href="#s2">2</a></sup
+          >
+          That is enough, it says, to train a model with about a billion
+          parameters on a large dataset, though the line "is not an
+          absolute rule." A company that fine-tunes someone else's model
+          becomes a provider bound by these duties only when that run uses
+          more than a third of the original training compute.<sup
+            class="nb-cite"
+            ><a href="#s2">2</a></sup
+          >
+        </p>
+      </section>
+
+      <section data-nb-section="systemic-risk-tier" id="systemic-risk-tier">
+        <h2>A second tier with no name on its list</h2>
+        <p>
+          A heavier set of duties attaches once a model crosses into
+          "systemic risk," a designation the Act reserves for capabilities
+          that "match or exceed the capabilities recorded in the most
+          advanced general-purpose AI models" (Article 3(64)).<sup
+            class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          The Act presumes that risk once a training run has used more than
+          10^25 floating-point operations of compute, a threshold that costs
+          tens of millions of euros to reach, per an estimate the Commission
+          cites.<sup
+            class="nb-cite"
+            ><a href="#s3">3</a></sup
+          >
+          A provider that crosses that line has two weeks to tell the
+          Commission (Article 52(1)), though it may still argue the model
+          poses no systemic risk (Article 52(2)).<sup class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+        </p>
+        <p>
+          Once notified, or designated by the Commission on its own
+          initiative, a provider takes on four further duties (Article
+          55(1)).<sup class="nb-cite"><a href="#s1">1</a></sup> It must
+          evaluate the model with state-of-the-art adversarial testing, and
+          assess and mitigate the risks it poses across the EU. It must
+          also report serious incidents to the AI Office without delay, and
+          secure the model and its infrastructure against attack.
+        </p>
+        <p>
+          The Act also requires the Commission to publish and keep current
+          a list of every model designated this way (Article 52(6)).<sup
+            class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          No such list is public, and no source names a model as notified
+          or designated. The gap means the record is incomplete, not that
+          the tier is empty: a provider that
+          crosses the threshold has no reason to announce it before the
+          Commission does.
+        </p>
+      </section>
+
+      <section data-nb-section="code-of-practice" id="code-of-practice">
+        <h2>Twenty-one signed. Meta refused.</h2>
+        <p>
+          The Commission published a General-Purpose AI Code of Practice on
+          10 July 2025, in three chapters. Transparency and Copyright are
+          open to any provider and aimed at Article 53. Safety and Security
+          binds only the systemic-risk tier under Article 55.<sup
+            class="nb-cite"
+            ><a href="#s4">4</a></sup
+          >
+          Signing does not by itself prove compliance, only a future
+          harmonised standard carries that legal presumption (Article
+          53(4)),<sup class="nb-cite"><a href="#s1">1</a></sup> but the
+          Commission calls it a route to "more legal certainty and trust"
+          than proving compliance other ways.<sup class="nb-cite"
+            ><a href="#s4">4</a></sup
+          >
+        </p>
+        <p>
+          Twenty-one companies signed the full code, Amazon, Anthropic,
+          Google, Microsoft, and OpenAI among them; xAI signed only the
+          Safety and Security chapter, leaving its Article 53 compliance to
+          another route.<sup class="nb-cite"><a href="#s4">4</a></sup> Meta
+          did not sign. Its global affairs chief, Joel Kaplan, wrote on
+          LinkedIn that the code went "far beyond the scope of the AI Act"
+          and would "stunt" European AI growth, a week after OpenAI had
+          committed to sign it.<sup class="nb-cite"><a href="#s5">5</a></sup>
+        </p>
+      </section>
+
+      <section data-nb-section="enforcement" id="enforcement">
+        <h2>One year of duties, one round of questions</h2>
+        <p>
+          None of this could cost a provider money until 2 August 2026,
+          when the Act's fining power took effect, a year after Chapter V's
+          duties did (Article 113; Article 101).<sup class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          From that date the AI Office can demand information from a
+          provider, evaluate a model directly, or order a fix, including
+          pulling the model from the market. It can also fine a provider up
+          to 3 percent of its global annual turnover or 15 million euros,
+          whichever is higher, for violating these duties, defying a fix,
+          or lying to an information request.<sup class="nb-cite"
+            ><a href="#s3">3</a></sup
+          >
+          Requests for information are the least aggressive tool on that
+          list, and it is the only one used since.
+        </p>
+        <p>
+          The Commission announced the start of its enforcement power on 31
+          July 2026 without naming a provider, and named none in the month
+          after.<sup class="nb-cite"><a href="#s6">6</a></sup> The only
+          enforcement action on record is a first round of information
+          requests to more than 30 AI providers on 1 September 2026, split
+          between a safety-and-security strand for the most advanced models
+          and a second aimed at providers that had stayed out of informal
+          compliance talks.<sup class="nb-cite"><a href="#s7">7</a></sup>
+          No fine, no ordered fix, and no model evaluation has been
+          reported since.
+        </p>
+        <p>
+          A model already on the EU market before 2 August 2025 has until
+          2 August 2027 to meet any of these duties (Article 111(3)).<sup
+            class="nb-cite"
+            ><a href="#s1">1</a></sup
+          >
+          The models readers already use, if placed on the market before
+          that date, still have another year to catch up.
+        </p>
+      </section>
+
+      <section class="nb-sources" data-nb-section="sources" id="sources">
+        <h2>Sources</h2>
+        <ol>
+          <li id="s1">
+            <a
+              data-nb-source
+              data-nb-kind="primary"
+              href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689"
+              >EUR-Lex · Regulation (EU) 2024/1689 (Artificial Intelligence
+              Act)</a
+            >
+          </li>
+          <li id="s2">
+            <a
+              data-nb-source
+              data-nb-kind="primary"
+              href="https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers"
+              >European Commission · FAQ: guidelines on obligations for
+              general-purpose AI providers</a
+            >
+          </li>
+          <li id="s3">
+            <a
+              data-nb-source
+              data-nb-kind="primary"
+              href="https://digital-strategy.ec.europa.eu/en/faqs/general-purpose-ai-models-ai-act-questions-answers"
+              >European Commission · General-purpose AI models under the AI
+              Act: questions and answers</a
+            >
+          </li>
+          <li id="s4">
+            <a
+              data-nb-source
+              data-nb-kind="primary"
+              href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
+              >European Commission · General-Purpose AI Code of Practice</a
+            >
+          </li>
+          <li id="s5">
+            <a
+              data-nb-source
+              data-nb-kind="secondary"
+              href="https://www.cnbc.com/2025/07/18/meta-europe-ai-code.html"
+              >CNBC · Meta says it won't sign the EU's AI code of
+              practice</a
+            >
+          </li>
+          <li id="s6">
+            <a
+              data-nb-source
+              data-nb-kind="primary"
+              href="https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
+              >European Commission · Commission starts enforcing AI Act
+              rules and new transparency requirements from 2 August</a
+            >
+          </li>
+          <li id="s7">
+            <a
+              data-nb-source
+              data-nb-kind="secondary"
+              href="https://agenceurope.eu/en/bulletin/article/13929/31/european-commission-sends-first-requests-for-information-to-more-than-30-ai-providers"
+              >Agence Europe · European Commission sends first requests for
+              information to more than 30 AI providers</a
+            >
+          </li>
+        </ol>
+      </section>
+    </article>
+  </body>
+</html>
